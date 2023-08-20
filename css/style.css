@@ -1,0 +1,183 @@
+:root {
+  /* 01 TYPOGRAPHY */
+
+  /* Font-Size */
+  --font-size-100: 1rem;
+  --font-size-150: 1.6rem;
+  --font-size-180: 1.8rem;
+  --font-size-200: 2rem;
+  --font-size-300: 3rem;
+  --font-size-400: 4rem;
+  --font-size-500: 5rem;
+  --font-size-600: 6rem;
+
+  /* Line-Height */
+  --big-header-line-height: 1.2;
+  --big-paragraph-line-height: 1.6;
+  /* Letter-Spacing */
+
+  /* 02 COLORS */
+
+  /* Primary Color */
+  --primary-color-80: #fdf2e9;
+  --primary-color-90: #f8d8bd;
+  --primary-color-100: #f0b27a;
+  --primary-color-200: #eea564;
+  --primary-color-300: #eb984e;
+  --primary-color-400: #e98b38;
+  --primary-color-500: #e67e22;
+  --primary-color-600: #cf711f;
+  --primary-color-700: #b8651b;
+  --primary-color-800: #a15818;
+
+  /* Accents Color */
+  --accent-color-500: #228ae6;
+
+  /* Greys (for typography) */
+
+  /* 03 Images */
+  /* Dimension */
+
+  /* 04 Icons */
+  /* Dimension */
+
+  /* 05 Shadow */
+  /* small, medium, big shadows */
+
+  /* 06 Border-Radius */
+  /* border radius for the different element. image, card ... */
+  /* 07 Whitespace */
+  --whitespace-100: 1rem;
+  --whitespace-200: 2rem;
+  --whitespace-300: 3rem;
+  --whitespace-400: 4rem;
+  --whitespace-500: 5rem;
+  --whitespace-600: 6rem;
+  --whitespace-700: 7rem;
+
+  --margin-right-small: 1rem;
+}
+
+/* 08 Visual Hierarchy */
+/* 09 UX */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* COMPONENT CLASS */
+.container {
+  max-width: 120rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.heading-1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+
+.heading-3 {
+  font-size: 3rem;
+  letter-spacing: -1.3px;
+  font-weight: 700;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn-primary-large,
+.btn-secondary-large,
+.btn-primary-small {
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-primary-large,
+.btn-secondary-large {
+  font-size: 2rem;
+  padding: 0.5rem 3rem;
+  font-weight: 500;
+}
+
+.btn-primary-small {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+}
+
+.btn-primary-large:link,
+.btn-primary-large:visited,
+.btn-primary-small:link,
+.btn-primary-small:visited {
+  background-color: var(--primary-color-400);
+  color: white;
+}
+
+.btn-primary-large:hover,
+.btn-primary-large:active,
+.btn-primary-small:hover,
+.btn-primary-small:active {
+  background-color: var(--primary-color-500);
+}
+
+.btn-secondary-large:link,
+.btn-secondary-large:visited {
+  color: black;
+  background-color: white;
+}
+
+.btn-secondary-large:hover,
+.btn-secondary-large:active {
+  box-shadow: 0px 0px 0px 1px var(--primary-color-100) inset;
+  background-color: var(--primary-color-80);
+}
+
+/* UTILITY CLASSES */
+.mb-component-large {
+  margin-bottom: 4rem;
+}
+.mb-component-medium {
+  margin-bottom: 3rem;
+}
+.mb-component-small {
+  margin-bottom: 2rem;
+}
+
+.mb-section-large {
+  margin-bottom: 10rem;
+}
+
+.mb-section-medium {
+  margin-bottom: 8rem;
+}
+
+.mb-section-small {
+  margin-bottom: 6rem;
+}
+
+/* Create utility class for spacing */
+/* between Section, sub element in section */
+/* Margin right */
