@@ -1,0 +1,115 @@
+.meals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 3rem;
+}
+
+.meals__header {
+  grid-column: 1/-1;
+}
+
+.meals__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  /* gap: 3rem; */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meals__card:hover {
+  transform: translateY(-2%);
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.18);
+}
+
+.meals__card__body__tags {
+  margin-bottom: 1rem;
+}
+.meals__card__body__tags__tag {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.meals__card__body__tags__tag--vegetarian {
+  background-color: #65a30d;
+}
+
+.meals__card__body__tags__tag--vegan {
+  background-color: #84cc16;
+}
+
+.meals__card__body__tags__tag--paleo {
+  background-color: #fbbf24;
+}
+
+.meals__card__image {
+  /* max-height: 21rem; */
+  width: 100%;
+}
+.meals__card__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 4.8rem 3.2rem 4.8rem;
+}
+
+.meals__card__body__meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.meals__card__body__meal-attributes__attribute {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.meals__card__body__meal-attributes__attribute__icon {
+  height: 2.1rem;
+}
+
+.meals__diets__options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.meals__diets__options__option {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 1.2rem;
+}
+
+.meals__diets__options__option__icon {
+  height: 3rem;
+}
+
+.meals__see-all {
+  /* grid-column: 1/-1; */
+}
+
+.meals__see-all:visited,
+.meals__see-all:link {
+  color: var(--primary-color-500);
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  text-decoration: underline solid Currentcolor;
+}
+
+.meals__see-all:hover,
+.meals__see-all:active {
+  color: var(--primary-color-600);
+  text-decoration: underline solid transparent;
+}
