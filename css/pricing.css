@@ -1,0 +1,76 @@
+.pricing__header {
+  grid-column: 1/-1;
+}
+
+.pricing__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+}
+
+.pricing__cards__card {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border: 1px solid var(--primary-color-90);
+  border-radius: 10px;
+  width: 75%;
+  padding: 2rem 7rem;
+}
+.pricing__cards__card--unfocus {
+  justify-self: end;
+}
+.pricing__cards__card--focus {
+  background-color: var(--primary-color-80);
+  position: relative;
+  overflow: hidden;
+}
+.pricing__cards__card--focus::after {
+  content: "Best Value";
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  font-weight: 500;
+
+  position: absolute;
+  left: 100%;
+  transform: translateX(-80%) translateY(60%) rotate(45deg);
+
+  background-color: #fbbf24;
+  padding: 0.5rem 5rem;
+}
+.pricing__cards__card__title {
+  text-transform: uppercase;
+  color: var(--primary-color-500);
+}
+.pricing__cards__card__price__tag {
+  font-size: 3rem;
+}
+.pricing__cards__card__detail {
+  color: #6f6f6f;
+}
+.pricing__cards__card__details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pricing__cards__card__details__detail {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.pricing__cards__card__btn {
+  align-self: flex-start;
+}
+
+.pricing__assets {
+  display: flex;
+  gap: 3rem;
+}
+.pricing__assets__asset__icon {
+  background-color: var(--primary-color-80);
+  padding: 1.5rem;
+  border-radius: 50%;
+}

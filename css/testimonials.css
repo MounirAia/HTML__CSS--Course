@@ -1,0 +1,44 @@
+.testimonials {
+  background-color: var(--primary-color-80);
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  justify-content: start;
+  align-items: start;
+}
+
+.testimonials__users {
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4rem;
+}
+.testimonials__users__header {
+  grid-column: 1/-1;
+}
+.testimonials__users__user__image {
+  border-radius: 50%;
+  height: 8rem;
+}
+.testimonials__users__user__username {
+  color: #6f6f6f;
+}
+
+.testimonials__galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-right: 2rem;
+  gap: 1rem;
+}
+
+.testimonials__galery__image-container {
+  overflow: hidden;
+}
+
+.testimonials__galery__image {
+  width: 100%;
+  transition: all 0.4s;
+}
+.testimonials__galery__image:hover {
+  transform: scale(1.1);
+}
