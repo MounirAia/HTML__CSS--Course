@@ -14,14 +14,13 @@
   gap: 4rem;
   border: 1px solid var(--primary-color-90);
   border-radius: 10px;
-  width: 75%;
+  /* width: 70%; */
   padding: 2rem 7rem;
-}
-.pricing__cards__card--unfocus {
-  justify-self: end;
 }
 .pricing__cards__card--focus {
   background-color: var(--primary-color-80);
+  border: none;
+
   position: relative;
   overflow: hidden;
 }

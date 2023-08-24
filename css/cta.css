@@ -1,0 +1,76 @@
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0;
+  background-color: var(--primary-color-400);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta__body {
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.cta__body_paragraph {
+  font-size: 2rem;
+}
+.cta__body__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 2rem;
+}
+.cta__body__form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cta__body__form__input label {
+  font-weight: 600;
+}
+
+.cta__body__form__input select,
+.cta__body__form__input select option,
+.cta__body__form__input input,
+.cta__body__form__input input::placeholder,
+.cta__body__form__submit {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.cta__body__form__input select:focus,
+.cta__body__form__input input:focus {
+  outline: 1rem solid rgba(255, 255, 255, 0.5);
+}
+
+.cta__body__form__input input,
+.cta__body__form__input select,
+.cta__body__form__submit {
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.cta__body__form__submit {
+  align-self: end;
+  background-color: var(--primary-color-900);
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.cta__body__form__submit:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.cta__image {
+  background: url("/img/gallery/gallery-10.jpg");
+  background-size: cover;
+  opacity: 70%;
+}

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/meals.css" />
     <link rel="stylesheet" href="css/testimonials.css" />
     <link rel="stylesheet" href="css/pricing.css" />
+    <link rel="stylesheet" href="css/cta.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <link rel="icon" href="img/favicon.png" />
     <title>Omnifood — Never cook again!</title>
@@ -650,6 +652,129 @@
           </div>
         </div>
       </section>
+      <section class="cta container mb-section-large">
+        <div class="cta__body">
+          <h2 class="heading-2">Get your first meal for free!</h2>
+          <p class="cta__body_paragraph paragraph">
+            Healthy, tasty and hassle-free meals are waiting for you. Start
+            eating well today. You can cancel or pause anytime. And the first
+            meal is on us!
+          </p>
+
+          <form class="cta__body__form" action="">
+            <div class="cta__body__form__input">
+              <label class="paragraph" for="full-name">Full Name</label>
+              <input
+                type="text"
+                name="username"
+                id="full-name"
+                placeholder="Jhon Smith"
+                required
+              />
+            </div>
+            <div class="cta__body__form__input">
+              <label class="paragraph" for="email">Email address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+            <div class="cta__body__form__input">
+              <label class="paragraph" for="reference"
+                >Where did you hear from us?</label
+              >
+              <select name="reference" id="reference" required>
+                <option value="">Please choose an option</option>
+                <option value="faf">Friends and Family</option>
+                <option value="youtube">Youtube</option>
+                <option value="podcast">Podcast</option>
+                <option value="facebook">Facebook ad</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <input
+              class="cta__body__form__submit"
+              type="submit"
+              value="Sign up now"
+            />
+          </form>
+        </div>
+        <figure class="cta__image"></figure>
+      </section>
     </main>
+
+    <footer class="footer container">
+      <div class="footer__copyright">
+        <a href="#" class="footer__copyright__link mb-component-small"
+          ><img
+            class="footer__copyright__logo"
+            src="img/omnifood-logo.png"
+            alt="Omnifood Logo"
+        /></a>
+        <div class="footer__copyright__icons mb-component-large">
+          <a href="#"
+            ><img
+              class="footer__copyright__icons__icon"
+              src="img/icons/instagram-logo.svg"
+              alt="Instagram Logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="footer__copyright__icons__icon"
+              src="img/icons/meta-logo.svg"
+              alt="Meta Logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="footer__copyright__icons__icon"
+              src="img/icons/twitter-logo.svg"
+              alt="Twitter Logo"
+          /></a>
+        </div>
+        <p class="footer__copyright__paragraph paragraph">
+          Copyright © 2023 by Omnifood, Inc. All rights reserved.
+        </p>
+      </div>
+
+      <div class="footer__contact-us mb-section-large">
+        <h4 class="heading-4 mb-component-small">Contact us</h4>
+        <a class="footer__link mb-component-large" href="#">
+          623 Harrison St., 2nd Floor, San Francisco, CA 94107
+        </a>
+        <a class="footer__link" href="#">415-201-6370</a>
+        <a class="footer__link" href="#">hello@omnifood.com</a>
+      </div>
+
+      <div class="footer__account">
+        <h4 class="heading-4 mb-component-medium">Account</h4>
+        <ul class="footer__links">
+          <a class="footer__link" href="#"><li>Create account</li></a>
+          <a class="footer__link" href="#"><li>Sign in</li></a>
+          <a class="footer__link" href="#"><li>iOS app</li></a>
+          <a class="footer__link" href="#"><li>Android app</li></a>
+        </ul>
+      </div>
+      <div class="footer__company">
+        <h4 class="heading-4 mb-component-medium">Company</h4>
+        <ul class="footer__links">
+          <a class="footer__link" href="#"><li>About Omnifood</li></a>
+          <a class="footer__link" href="#"><li>For Business</li></a>
+          <a class="footer__link" href="#"><li>Cooking partners</li></a>
+          <a class="footer__link" href="#"><li>Careers</li></a>
+        </ul>
+      </div>
+      <div class="footer__resources">
+        <h4 class="heading-4 mb-component-medium">Resources</h4>
+        <ul class="footer__links">
+          <a class="footer__link" href="#"><li>Recipe directory</li></a>
+          <a class="footer__link" href="#"><li>Help center</li></a>
+          <a class="footer__link" href="#"><li>Privacy & terms</li></a>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

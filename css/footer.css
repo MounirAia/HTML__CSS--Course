@@ -1,0 +1,42 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5rem;
+}
+.footer__copyright__link {
+  display: inline-block;
+}
+.footer__copyright__logo {
+  width: 100%;
+}
+.footer__copyright__paragraph {
+  color: #6f6f6f;
+}
+.footer__copyright__icons {
+  display: flex;
+  gap: 2rem;
+}
+.footer__copyright__icons__icon {
+  height: 3rem;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  display: block;
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: black;
+}

@@ -29,6 +29,9 @@
   --primary-color-600: #cf711f;
   --primary-color-700: #b8651b;
   --primary-color-800: #a15818;
+  --primary-color-900: #45260a;
+  --primary-color-1000: #2e1907;
+  --primary-color-1100: #170d03;
 
   /* Accents Color */
   --accent-color-500: #228ae6;
@@ -72,6 +75,23 @@ html {
 }
 
 body {
+  font-family: "Rubik", sans-serif;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Rubik", sans-serif;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Rubik", sans-serif;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: "Rubik", sans-serif;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
   font-family: "Rubik", sans-serif;
 }
 
