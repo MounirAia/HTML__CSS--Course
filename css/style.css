@@ -72,10 +72,21 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }
 
 body {
   font-family: "Rubik", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.body--sticky {
+  overflow-y: hidden;
 }
 
 ::-webkit-input-placeholder {
@@ -211,7 +222,3 @@ body {
 .mb-section-small {
   margin-bottom: 6rem;
 }
-
-/* Create utility class for spacing */
-/* between Section, sub element in section */
-/* Margin right */

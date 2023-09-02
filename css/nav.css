@@ -1,0 +1,85 @@
+.header__nav {
+  background-color: var(--primary-color-80);
+  height: 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 0 4rem;
+}
+
+.header__nav--sticky {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  padding: 3rem 4rem 3rem 4rem;
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero__nav__logo {
+  height: 2.2rem;
+  flex-shrink: 0;
+}
+
+.header__nav__options__container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header__nav__options__option:visited,
+.header__nav__options__option:link {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s;
+}
+
+.header__nav__options__option:hover,
+.header__nav__options__option:active {
+  color: var(--primary-color-500);
+}
+
+/* NAVBAR TOGGLE */
+.header__nav__toggle {
+  align-self: center;
+  background: none;
+  border: none;
+
+  z-index: 9999;
+  display: none;
+}
+
+.header__nav__toggle:focus {
+  outline: 5px solid rgba(230, 126, 34, 0.5);
+}
+.header__nav__toggle:active {
+  background-color: #e0ffff;
+}
+
+.header__nav__toggle__bar,
+.header__nav__close__bar {
+  width: 32px;
+  height: 32px;
+}
+
+.header__nav__toggle__bar--close {
+  display: none;
+}
+
+.header__nav__toggle__bar--open {
+  display: block;
+}
+
+.header__nav__close__bar--close {
+  display: none;
+}
+.header__nav__close__bar--open {
+  font-size: 4rem;
+  display: block;
+}

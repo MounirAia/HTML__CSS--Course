@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/featured-in.css" />
     <link rel="stylesheet" href="css/how-to.css" />
@@ -18,27 +19,54 @@
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/cta.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
 
     <link rel="icon" href="img/favicon.png" />
     <title>Omnifood — Never cook again!</title>
   </head>
   <body>
-    <nav class="hero__nav">
+    <header class="header__nav">
       <a href="#">
         <img
           class="hero__nav__logo"
-          src="img/omnifood-logo.png"
+          src="img/omnifood-logo.webp"
           alt="Omnifood Logo"
         />
       </a>
-      <menu class="hero__nav__menu">
-        <a href="#" class="hero__nav__menu__link">How it works</a>
-        <a href="#" class="hero__nav__menu__link">Meals</a>
-        <a href="#" class="hero__nav__menu__link">Testimonials</a>
-        <a href="#" class="hero__nav__menu__link">Pricing</a>
-        <a href="#" class="btn-primary-small">Try for free</a>
-      </menu>
-    </nav>
+      <button class="header__nav__toggle">
+        <span class="header__nav__toggle__bar header__nav__toggle__bar--open">
+          <img src="img/icons/list.svg" alt="Open Navbar Icon"
+        /></span>
+        <span class="header__nav__close__bar header__nav__close__bar--close"
+          ><img src="img/icons/x_black.svg" alt="Close Navbar button"
+        /></span>
+      </button>
+      <nav class="header__nav__options header__nav__options--mobile--closed">
+        <ul class="header__nav__options__container">
+          <li>
+            <a href="#how-to" class="header__nav__options__option"
+              >How it works</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="header__nav__options__option"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#pricing" class="header__nav__options__option">Pricing</a>
+          </li>
+          <li>
+            <a href="#meals" class="header__nav__options__option">Meals</a>
+          </li>
+          <li>
+            <a href="#cta" class="header__nav__options__cta btn-primary-small"
+              >Try for free</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="hero mb-component-large">
         <div class="hero__sub-wrapper">
@@ -55,12 +83,14 @@
             </p>
             <div class="hero__sub-wrapper__buttons mb-section-large">
               <a
-                href="#"
+                href="#cta"
                 class="btn-primary-large hero__sub-wrapper__buttons__button"
               >
                 Get Started
               </a>
-              <a href="#" class="btn-secondary-large"> Learn More &darr; </a>
+              <a href="#how-to" class="btn-secondary-large">
+                Learn More &darr;
+              </a>
             </div>
             <div class="hero__sub-wrapper__user-pictures">
               <img
@@ -101,7 +131,7 @@
 
           <img
             class="hero__sub-wrapper__image"
-            src="img/hero2.png"
+            src="img/hero2.webp"
             alt="Image related to Omnifood product"
           />
         </div>
@@ -136,7 +166,7 @@
           />
         </div>
       </section>
-      <section class="how-to container mb-section-large">
+      <section id="how-to" class="how-to container mb-section-large">
         <span class="sub-heading">How It Works</span>
         <h2 class="heading-2 mb-section-medium">
           Your daily dose of health in 3 simple steps
@@ -155,22 +185,18 @@
             </p>
           </div>
           <div class="how-to__step__images">
-            <div class="how-to__step__images__concentric-circle-light"></div>
-            <div class="how-to__step__images__concentric-circle-darker"></div>
             <img
               class="how-to__step__images__image"
-              src="img/app/app-screen-1.png"
+              src="img/app/app-screen-1.webp"
               alt="Omnifood mobile application image"
             />
           </div>
         </div>
         <div class="how-to__step mb-section-large">
           <div class="how-to__step__images">
-            <div class="how-to__step__images__concentric-circle-light"></div>
-            <div class="how-to__step__images__concentric-circle-darker"></div>
             <img
               class="how-to__step__images__image"
-              src="img/app/app-screen-2.png"
+              src="img/app/app-screen-2.webp"
               alt="Omnifood mobile application image"
             />
           </div>
@@ -199,24 +225,22 @@
             </p>
           </div>
           <div class="how-to__step__images">
-            <div class="how-to__step__images__concentric-circle-light"></div>
-            <div class="how-to__step__images__concentric-circle-darker"></div>
             <img
               class="how-to__step__images__image"
-              src="img/app/app-screen-3.png"
+              src="img/app/app-screen-3.webp"
               alt="Omnifood mobile application image"
             />
           </div>
         </div>
       </section>
-      <section class="meals container mb-section-large">
+      <section id="meals" class="meals container mb-section-large">
         <div class="meals__header mb-component-medium">
           <span class="sub-heading">Meals</span>
           <h2 class="heading-2">Omnifood AI chooses from 5,000+ recipes</h2>
         </div>
         <div class="meals__card">
           <img
-            src="img/meals/meal-1.jpg"
+            src="img/meals/meal-1.webp"
             alt="Image of dumplings"
             class="meals__card__image"
           />
@@ -258,7 +282,7 @@
         </div>
         <div class="meals__card">
           <img
-            src="img/meals/meal-2.jpg"
+            src="img/meals/meal-2.webp"
             alt="Image of dumplings"
             class="meals__card__image"
           />
@@ -391,7 +415,7 @@
         </div>
         <a href="#" class="meals__see-all">See all recipes →</a>
       </section>
-      <section class="testimonials mb-section-large">
+      <section id="testimonials" class="testimonials mb-section-large">
         <div class="testimonials__users">
           <div class="testimonials__users__header mb-component-medium">
             <span class="sub-heading">Testimonials</span>
@@ -522,7 +546,7 @@
           </figure>
         </div>
       </section>
-      <section class="pricing container mb-section-large">
+      <section id="pricing" class="pricing container mb-section-large">
         <div class="pricing__header mb-component-medium">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-2">Eating well without breaking the bank</h2>
@@ -558,7 +582,7 @@
                 <span>Get access to latest recipes</span>
               </li>
             </ul>
-            <a href="#" class="pricing__cards__card__btn btn-primary-large"
+            <a href="#cta" class="pricing__cards__card__btn btn-primary-large"
               >Start eating well</a
             >
           </div>
@@ -592,7 +616,7 @@
                 <span>Get access to latest recipes</span>
               </li>
             </ul>
-            <a href="#" class="pricing__cards__card__btn btn-primary-large"
+            <a href="#cta" class="pricing__cards__card__btn btn-primary-large"
               >Start eating well</a
             >
           </div>
@@ -652,67 +676,69 @@
           </div>
         </div>
       </section>
-      <section class="cta container mb-section-large">
-        <div class="cta__body">
-          <h2 class="heading-2">Get your first meal for free!</h2>
-          <p class="cta__body_paragraph paragraph">
-            Healthy, tasty and hassle-free meals are waiting for you. Start
-            eating well today. You can cancel or pause anytime. And the first
-            meal is on us!
-          </p>
+      <section id="cta" class="cta-container container">
+        <div class="cta mb-section-large">
+          <div class="cta__body">
+            <h2 class="heading-2">Get your first meal for free!</h2>
+            <p class="cta__body_paragraph paragraph">
+              Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the first
+              meal is on us!
+            </p>
 
-          <form class="cta__body__form" action="">
-            <div class="cta__body__form__input">
-              <label class="paragraph" for="full-name">Full Name</label>
-              <input
-                type="text"
-                name="username"
-                id="full-name"
-                placeholder="Jhon Smith"
-                required
-              />
-            </div>
-            <div class="cta__body__form__input">
-              <label class="paragraph" for="email">Email address</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="me@example.com"
-                required
-              />
-            </div>
-            <div class="cta__body__form__input">
-              <label class="paragraph" for="reference"
-                >Where did you hear from us?</label
-              >
-              <select name="reference" id="reference" required>
-                <option value="">Please choose an option</option>
-                <option value="faf">Friends and Family</option>
-                <option value="youtube">Youtube</option>
-                <option value="podcast">Podcast</option>
-                <option value="facebook">Facebook ad</option>
-                <option value="others">Others</option>
-              </select>
-            </div>
+            <form class="cta__body__form" action="">
+              <div class="cta__body__form__input">
+                <label class="paragraph" for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="full-name"
+                  placeholder="Jhon Smith"
+                  required
+                />
+              </div>
+              <div class="cta__body__form__input">
+                <label class="paragraph" for="email">Email address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+              <div class="cta__body__form__input">
+                <label class="paragraph" for="reference"
+                  >Where did you hear from us?</label
+                >
+                <select name="reference" id="reference" required>
+                  <option value="">Please choose an option</option>
+                  <option value="faf">Friends and Family</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="facebook">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
 
-            <input
-              class="cta__body__form__submit"
-              type="submit"
-              value="Sign up now"
-            />
-          </form>
+              <input
+                class="cta__body__form__submit"
+                type="submit"
+                value="Sign up now"
+              />
+            </form>
+          </div>
+          <figure class="cta__image"></figure>
         </div>
-        <figure class="cta__image"></figure>
       </section>
     </main>
-
+    <div class="footer-line mb-section-large"></div>
     <footer class="footer container">
       <div class="footer__copyright">
         <a href="#" class="footer__copyright__link mb-component-small"
           ><img
             class="footer__copyright__logo"
-            src="img/omnifood-logo.png"
+            src="img/omnifood-logo.webp"
             alt="Omnifood Logo"
         /></a>
         <div class="footer__copyright__icons mb-component-large">
@@ -776,5 +802,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
