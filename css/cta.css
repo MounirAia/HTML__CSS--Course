@@ -70,7 +70,7 @@
 }
 
 .cta__image {
-  background: url("/img/gallery/gallery-10.jpg");
+  background: url("../img/gallery/gallery-10.jpg");
   background-size: cover;
   opacity: 70%;
 }
